@@ -643,6 +643,16 @@ regex_pattern = r"(M{0,3})(C[DM]|D?C{0,3})(X[LC]|L?X{0,3})(I[VX]|V?I{0,3})$"	# D
 
 import re
 print(str(bool(re.match(regex_pattern, input()))))
+#validating phone numbers 
+import re 
+n= int(input())
+
+for _ in range(n): 
+    if re.search(r"^[789][0-9]{9}$", input()):
+        print ('YES')
+    else:
+        print('NO')
+
 
 #Validating and Parsing Email Addresses
 import re
